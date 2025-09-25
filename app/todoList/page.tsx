@@ -59,7 +59,7 @@ function ToDoList() {
           placeholder="Enter a Task"
           value={newTask}
           onChange={handleInputChange}
-          className="text-[1.6rem] p-[10px] border-1 border-solid border-neutral-200 text-neutral-950"
+          className="text-[1.6rem] p-[10px] border-1 border-solid border-neutral-200"
         />
 
         <button

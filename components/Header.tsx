@@ -7,7 +7,7 @@ import SecondaryButton from "./SecondaryButton";
 const HeaderLinks  = [
     {label: "Home", link:"/"},
     {label: "Profile", link:"/"},
-    {label: "Blog", link:"/"},
+    {label: "Form", link:"/helloForm"},
     {label: "Todo", link:"/todoList"}
 ]
 
