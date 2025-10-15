@@ -1,6 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
+import { Authenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+
+
 
 function ToDoList() {
   const taskList = ["Eat Breakfast", "Walk the dog", "Take a Shower"];
@@ -50,6 +54,8 @@ function ToDoList() {
   }
 
   return (
+        <Authenticator>
+      {({ signOut, user }) => (
     <div className="text-center mt-[100px]">
       <h1 className="text-[2rem]">To-Do-List</h1>
 
@@ -98,7 +104,8 @@ function ToDoList() {
           </li>
         ))}
       </ol>
-    </div>
+    </div>)}
+    </Authenticator>
   );
 }
 
